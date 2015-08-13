@@ -2,7 +2,7 @@
   "name": "drsdre/yii2-add-to-homescreen",
   "description": "Yii2 asset extension for https://github.com/cubiq/add-to-homescreen",
   "type": "yii2-extension",
-  "keywords": ["yii2","extension","asset","mobile",""],
+  "keywords": ["yii2","extension","asset","widget","mobile","homescreen","favorite"],
   "license": "Apache-2.0",
   "homepage": "https://github.com/drsdre/yii2-add-to-homescreen",
   "support": {
