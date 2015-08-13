@@ -8,7 +8,7 @@
   "support": {
     "issues": "https://github.com/drsdre/yii2-add-to-homescreen/issues?state=open",
     "source": "https://github.com/drsdre/yii2-add-to-homescreen",
-    "docs": "https://github.com/cubiq/add-to-homescreen"
+    "docs": "http://cubiq.org/add-to-home-screen"
   },
   "authors": [
     {
@@ -19,7 +19,7 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "*",
-    "bower-asset/add-to-homescreen": "dev-master"
+    "bower-asset/add-to-homescreen": "@dev"
   },
   "autoload": {
     "psr-4": {
@@ -27,6 +27,7 @@
     }
   },
   "extra": {
+    "asset-optimize-with-installed-packages": false,
     "asset-repositories": {
       "bower-asset/add-to-homescreen": {
         "type": "bower-github",
