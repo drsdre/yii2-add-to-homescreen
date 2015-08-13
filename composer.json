@@ -16,23 +16,28 @@
       "email": "andre.schuurman+yii2-add-to-homescreen@gmail.com"
     }
   ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "cubiq/add-to-homescreen",
+        "type": "component",
+        "version": "3.2.2",
+        "source": {
+          "url": "https://github.com/cubiq/add-to-homescreen.git",
+          "type": "git"
+        }
+      }
+    }
+  ],
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "*",
-    "bower-asset/add-to-homescreen": "@dev"
+    "cubiq/add-to-homescreen": "3.2.2"
   },
   "autoload": {
     "psr-4": {
       "AddToHomescreen\\": ""
-    }
-  },
-  "extra": {
-    "asset-optimize-with-installed-packages": false,
-    "asset-repositories": {
-      "bower-asset/add-to-homescreen": {
-        "type": "bower-github",
-        "url": "https://github.com/cubiq/add-to-homescreen.git"
-      }
     }
   }
 }
