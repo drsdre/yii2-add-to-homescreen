@@ -1,0 +1,37 @@
+{
+  "name": "drsdre/yii2-add-to-homescreen",
+  "description": "Yii2 asset extension for https://github.com/cubiq/add-to-homescreen",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension","asset","mobile",""],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/drsdre/yii2-add-to-homescreen",
+  "support": {
+    "issues": "https://github.com/drsdre/yii2-add-to-homescreen/issues?state=open",
+    "source": "https://github.com/drsdre/yii2-add-to-homescreen",
+    "docs": "https://github.com/cubiq/add-to-homescreen"
+  },
+  "authors": [
+    {
+      "name": "Andre Schuurman",
+      "email": "andre.schuurman+yii2-add-to-homescreen@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "*",
+    "bower-asset/add-to-homescreen": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "AddToHomescreen\\": ""
+    }
+  },
+  "extra": {
+    "asset-repositories": {
+      "bower-asset/add-to-homescreen": {
+        "type": "bower-github",
+        "url": "https://github.com/cubiq/add-to-homescreen.git"
+      }
+    }
+  }
+}
