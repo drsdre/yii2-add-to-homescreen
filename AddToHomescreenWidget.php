@@ -20,7 +20,7 @@ use yii\base\Widget;
 class AddToHomescreenWidget extends Widget {
 	public function run() {
 		parent::run();
-		AddToHomescreenWidget::register($this->getView());
+		AddToHomescreenAsset::register($this->getView());
 		return "<script>addToHomescreen();</script>";
 	}
 }
