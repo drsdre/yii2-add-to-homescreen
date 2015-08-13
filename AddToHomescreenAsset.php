@@ -20,9 +20,9 @@ class AddToHomescreenAsset extends AssetBundle
 {
 	public $sourcePath = '@bower/add-to-homescreen';
 	public $css = [
-		'style/addtohomescreen.min.css',
+		'style/addtohomescreen.css',
 	];
 	public $js = [
-		'src/addtohomescreen.js'
+		'src/addtohomescreen.min.js'
 	];
 }

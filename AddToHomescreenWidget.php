@@ -10,6 +10,7 @@ namespace AddToHomescreen;
 
 use yii;
 use yii\base\Widget;
+use yii\web\View;
 
 /**
  * Widget for add-to-homescreen
@@ -18,9 +19,15 @@ use yii\base\Widget;
  * @since 1.0
  */
 class AddToHomescreenWidget extends Widget {
+
+	public $settings = [];
+
 	public function run() {
 		parent::run();
+
 		AddToHomescreenAsset::register($this->getView());
-		return "<script>addToHomescreen();</script>";
+
+		$options = json_encode($this->settings);
+		$this->getView()->registerJs("addToHomescreen($options);",  View::POS_READY);
 	}
 }
