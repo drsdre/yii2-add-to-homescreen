@@ -22,7 +22,14 @@ class AddToHomescreenAsset extends AssetBundle
 	public $css = [
 		'style/addtohomescreen.css',
 	];
-	public $js = [
-		'src/addtohomescreen.min.js'
-	];
+	public function init() {
+		// In dev mode use non-minified javascripts
+		$this->js = YII_DEBUG ? [
+			'addtohomescreen.js',
+		]:[
+			'addtohomescreen.min.js',
+		];
+
+		parent::init();
+	}
 }
