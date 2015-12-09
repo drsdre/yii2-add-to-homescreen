@@ -21,23 +21,35 @@
       "type": "package",
       "package": {
         "name": "cubiq/add-to-homescreen",
-        "type": "component",
         "version": "3.2.2",
+        "dist": {
+          "url": "https://github.com/cubiq/add-to-homescreen/archive/3.2.2.zip",
+          "type": "zip"
+        },
         "source": {
           "url": "https://github.com/cubiq/add-to-homescreen.git",
-          "type": "git"
+          "type": "git",
         }
       }
     }
   ],
   "require": {
     "php": ">=5.4.0",
-    "yiisoft/yii2": "*",
+    "yiisoft/yii2": "~2.0",
     "cubiq/add-to-homescreen": "3.2.2"
   },
   "autoload": {
     "psr-4": {
       "AddToHomescreen\\": ""
+    }
+  },
+  "extra": {
+    "asset-optimize-with-installed-packages": false,
+    "asset-repositories": {
+      "bower-asset/add-to-homescreen": {
+        "type": "bower-github",
+        "url": "https://github.com/cubiq/add-to-homescreen.git"
+      }
     }
   }
 }
