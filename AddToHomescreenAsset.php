@@ -25,9 +25,9 @@ class AddToHomescreenAsset extends AssetBundle
 	public function init() {
 		// In dev mode use non-minified javascripts
 		$this->js = YII_DEBUG ? [
-			'addtohomescreen.js',
+			'src/addtohomescreen.js',
 		]:[
-			'addtohomescreen.min.js',
+			'src/addtohomescreen.min.js',
 		];
 
 		parent::init();
